@@ -1,13 +1,476 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1c1c1c; /* Cor de fundo escura */
+    color: #ffffff; /* Cor do texto */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #dc3545; /* Cor de fundo do cabeçalho */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #343a40; /* Cor de fundo da navegação */
+    border-bottom: 1px solid #555555; /* Cor da borda inferior */
+    padding: 10px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #dc3545; /* Cor do texto do link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #2c2c2c; /* Cor de fundo do conteúdo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    border-radius: 5px;
+}
+
+.links-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.links-section h2 {
+    border-bottom: 1px solid #dee2e6; /* Cor da borda inferior do título */
+    padding-bottom: 10px;
+}
+
+.links-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links-section li {
+    margin: 10px 0;
+}
+
+details {
+    margin-bottom: 10px;
+}
+
+.search-form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.search-input {
+    width: 60%;
+    padding: 8px;
+    margin-right: 5px;
+}
+
+.search-button {
+    padding: 8px 15px;
+}
+
+.links-section .row-cols-md-3 {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espaço entre os cards */
+}
+
+.links-section .col {
+    margin: 10px;
+    flex: 0 0 calc(33.33% - 20px); /* Reduz o tamanho dos cards e define a largura máxima */
+}
+
+.card {
+    cursor: pointer;
+}
+.card:hover {
+    border: 2px solid gold; /* Substitua "gold" pela cor desejada */
+    box-shadow: 0 0 10px rgba(255, 223, 0, 0.5); /* Efeito de sombra brilhante */
+    transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transição suave */
+}
+.card-link {
+    color:#ffd900;
+}
+
+a:focus {
+    color: #e44d26 !important; /* Cor desejada para links com foco */
+    outline: none; /* Remove a borda padrão que alguns navegadores adicionam */
+}
+
+
+
+/*************************************/
+
+details:hover {
+    background-color: #202325; /* Cor de destaque ao passar o mouse */
+    transition: background-color 0.3s ease-in-out; /* Transição suave */
+    cursor: pointer;
+}
+
+details summary {
+    background-color: #343a40; /* Cor de fundo da aba */
+    color: white; /* Cor do texto da aba */
+    padding: 10px;
+    cursor: pointer;
+}
+
+details summary:hover {
+    background-color: #555555; /* Cor de destaque ao passar o mouse */
+    transition: background-color 0.3s ease-in-out; /* Transição suave */
+}
+
+
+/**********************************************************************************/
+.links-section .card-body:hover {
+    background-color: #000000; /* Exemplo de cor de fundo */
+
+}
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Minha Home Page Profissional</h1>
+    </header>
+<!--
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+    </nav>
+    -->
+<!---------------------------------------------------------------------------------------------->
+
+<div class="container">
+
+    <!-- Seção de Links -->
+
+    <!-- Menus Expansíveis -->
+
+    <!-- Formulário de Busca -->
+    <div class="search-form">
+        <form action="https://www.google.com/search" method="GET" target="_blank">
+            <input type="text" name="q" class="search-input" placeholder="Pesquisar no Google" required>
+            <button type="submit" class="btn btn-primary search-button">Pesquisar</button>
+        </form>
+    </div>
+
+</div>
+
+<!---------------------------------------------------------------------------------------------->
+
+
+
+
+
+<div class="container">
+
+    <!-- Seção de Links -->
+    <div class="links-section">
+        <h2>Links Gerais</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Adicione seus links favoritos aqui -->
+            <!-- ----------------------------------------------------------------------------->
+            <div class="col">
+                <div class="card bg-dark text-white" >
+                    <a href="https://chat.openai.com/" class="card-link" target="_blank">
+                    <div class="card-body">
+                        Chat GPT
+                        
+                    </div>
+                </a>
+                </div>
+            </div>
+<!-- ----------------------------------------------------------------------------->
+<div class="col">
+    <div class="card bg-dark text-white" >
+        <a href="https://web.whatsapp.com/" class="card-link" target="_blank">
+            <div class="card-body">
+                ZAPZAP
+            </div>
+        </a>
+    </div>
+</div>
+<!-- ----------------------------------------------------------------------------->
+<div class="col">
+    <div class="card bg-dark text-white" >
+        <a href="https://www.infojobs.com.br/Candidate/Match/List.aspx" class="card-link" target="_blank">
+            <div class="card-body">
+                InfoJobs
+            </div>
+        </a>
+    </div>
+</div>
+<!-- ----------------------------------------------------------------------------->
+<!-- ----------------------------------------------------------------------------->
+<div class="col">
+    <div class="card bg-dark text-white" >
+        <a href="https://relogioonline.com.br/" class="card-link" target="_blank">
+            <div class="card-body">
+                Definir um alarme/cronômetro
+            </div>
+        </a>
+    </div>
+</div>
+<!-- ----------------------------------------------------------------------------->
+<div class="col">
+    <div class="card bg-dark text-white" >
+        <a href="https://www.upwork.com/" class="card-link" target="_blank">
+            <div class="card-body">
+                Vagas do Upwork
+            </div>
+        </a>
+    </div>
+</div>
+<!-- ----------------------------------------------------------------------------->
+<div class="col">
+    <div class="card bg-dark text-white" >
+        <a href="https://colab.research.google.com/" class="card-link" target="_blank">
+            <div class="card-body">
+                Praticar análise de dados
+            </div>
+        </a>
+    </div>
+</div>
+<!-- ----------------------------------------------------------------------------->
+<div class="col">
+    <div class="card bg-dark text-white">
+        <a href="https://www.facebook.com/" class="card-link" target="_blank">
+            <div class="card-body">
+                Facebook
+            </div>
+        </a>
+    </div>
+</div>
+<!-- ----------------------------------------------------------------------------->
+<div class="col">
+    <div class="card bg-dark text-white" >
+        <a href="https://www.youtube.com/" class="card-link" target="_blank">
+            <div class="card-body">
+                YouTube
+            </div>
+        </a>
+    </div>
+</div>
+<!-- ----------------------------------------------------------------------------->
+
+
+
+            <!-- Adicione outros links da mesma forma -->
+        </div>
+    </div>
+
+</div>
+
+        <!-- Menus Expansíveis -->
+        <div class="container mt-5">
+            <h2 class="text-center mb-4">Sessão 1</h2>
+
+            <div class="card-deck">
+                <!-- Redes Sociais -->
+                <div class="card bg-primary text-white">
+                    <div class="card-header">
+                        <h5 class="card-title">Redes Sociais</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li><a href="https://www.instagram.com/" class="text-white">Instagram</a></li>
+                            <li><a href="https://twitter.com/?lang=pt-br" class="text-white">X - Twitter</a></li>
+                            <li><a href="https://www.reddit.com/" class="text-white">Reddit</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Marketplaces de Jobs -->
+                <div class="card bg-success text-white">
+                    <div class="card-header">
+                        <h5 class="card-title">Marketplaces de Jobs</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li><a href="https://go.workana.com/freelance-pt-01/" class="text-white">Workana</a></li>
+                            <li><a href="https://freelancer.com.br/" class="text-white">Freelancer</a></li>
+                            <li><a href="https://www.upwork.com/" class="text-white">upwork</a></li>
+                            <li><a href="https://www.99freelas.com.br/dashboard" class="text-white">99freelas</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Marketplaces de Produtos -->
+                <div class="card bg-info text-white">
+                    <div class="card-header">
+                        <h5 class="card-title">Marketplaces de Produtos</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li><a href="https://app.hotmart.com/" class="text-white">Hotmart</a></li>
+                            <li><a href="https://orbita.eduzz.com/producer/dashboard" class="text-white">Eduzz</a></li>
+                            <li><a href="https://privacy.com.br/" class="text-white">Privacy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!---------------------------------------->
+
+        <div class="container mt-5">
+            <h2 class="text-center mb-4">Sessão 2</h2>
+
+            <div class="card-deck">
+                <!-- Redes Sociais -->
+                <div class="card bg-primary text-white">
+                    <div class="card-header">
+                        <h5 class="card-title">Redes Sociais</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Site 1.1</a></li>
+                            <li><a href="#" class="text-white">Site 1.2</a></li>
+                            <li><a href="#" class="text-white">Site 1.3</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Marketplaces de Jobs -->
+                <div class="card bg-success text-white">
+                    <div class="card-header">
+                        <h5 class="card-title">Marketplaces de Jobs</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Site 2.1</a></li>
+                            <li><a href="#" class="text-white">Site 2.2</a></li>
+                            <li><a href="#" class="text-white">Site 2.3</a></li>
+                        </ul>
+                    </div>
+                </div>
+<!--------------------------------------------------------------------------->
+                <!-- Marketplaces de Produtos -->
+                <div class="card bg-info text-white">
+                    <div class="card-header">
+                        <h5 class="card-title">Inteligências artificiais</h5>
+                    </div>
+                    <div class="card-body">
+                        <!-- Detalhes do YouTube - Canal 1 -->
+                        <details>
+                            <summary>Para texto</summary>
+                            <ul class="list-unstyled">
+                                <li><a href="#" target="_blank" class="text-white">Vídeo 1.1</a></li>
+                                <li><a href="#" target="_blank" class="text-white">Vídeo 1.2</a></li>
+                                <li><a href="#" target="_blank" class="text-white">Vídeo 1.3</a></li>
+                            </ul>
+                        </details>
+                
+                        <!-- Detalhes do YouTube - Canal 2 -->
+                        <details>
+                            <summary>Para Fotos</summary>
+                            <ul class="list-unstyled">
+                                <li><a href="#" target="_blank" class="text-white">Vídeo 2.1</a></li>
+                                <li><a href="#" target="_blank" class="text-white">Vídeo 2.2</a></li>
+                                <li><a href="#" target="_blank" class="text-white">Vídeo 2.3</a></li>
+                            </ul>
+                        </details>
+                
+                        <!-- Detalhes do YouTube - Canal 3 -->
+                        <details>
+                            <summary>Para Audios</summary>
+                            <ul class="list-unstyled">
+                                <li><a href="#" target="_blank" class="text-white">Vídeo 3.1</a></li>
+                                <li><a href="#" target="_blank" class="text-white">Vídeo 3.2</a></li>
+                                <li><a href="#" target="_blank" class="text-white">Vídeo 3.3</a></li>
+                            </ul>
+                        </details>
+
+                                                <!-- Detalhes do YouTube - Canal 3 -->
+                                                <details>
+                                                    <summary>Para Vídeos</summary>
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="#" target="_blank" class="text-white">Vídeo 3.1</a></li>
+                                                        <li><a href="#" target="_blank" class="text-white">Vídeo 3.2</a></li>
+                                                        <li><a href="#" target="_blank" class="text-white">Vídeo 3.3</a></li>
+                                                    </ul>
+                                                </details>
+
+                    </div>
+                </div>
+
+                 <!-- Marketplaces de Produtos -->
+                 <div class="card bg-info text-white">
+                    <div class="card-header">
+                        <h5 class="card-title">Vídeos Youtube</h5>
+                    </div>
+                    <div class="card-body">
+                        <!-- Detalhes do YouTube - Canal 1 -->
+                        <details>
+                            <summary>Canal 1</summary>
+                            <ul class="list-unstyled">
+                                <li><a href="#" target="_blank" class="text-white">Vídeo 1.1</a></li>
+                                <li><a href="#" target="_blank" class="text-white">Vídeo 1.2</a></li>
+                                <li><a href="#" target="_blank" class="text-white">Vídeo 1.3</a></li>
+                            </ul>
+                        </details>
+                
+                        <!-- Detalhes do YouTube - Canal 2 -->
+                        <details>
+                            <summary>Canal 2</summary>
+                            <ul class="list-unstyled">
+                                <li><a href="#" target="_blank" class="text-white">Vídeo 2.1</a></li>
+                                <li><a href="#" target="_blank" class="text-white">Vídeo 2.2</a></li>
+                                <li><a href="#" target="_blank" class="text-white">Vídeo 2.3</a></li>
+                            </ul>
+                        </details>
+                
+                        <!-- Detalhes do YouTube - Canal 3 -->
+                        <details>
+                            <summary>Canal 3</summary>
+                            <ul class="list-unstyled">
+                                <li><a href="#" target="_blank" class="text-white">Vídeo 3.1</a></li>
+                                <li><a href="#" target="_blank" class="text-white">Vídeo 3.2</a></li>
+                                <li><a href="#" target="_blank" class="text-white">Vídeo 3.3</a></li>
+                            </ul>
+                        </details>
+                    </div>
+                </div>
+
+
+<!-------------------------------------------------------------------------->                
+            </div>
+        </div>
+
+         <!---------------------------------------->
+
+
+    </div>
+
+    <!-- Bootstrap JS e Popper.js CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Função para abrir o link em uma nova aba
+        function openLink(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+
 </html>
